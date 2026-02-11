@@ -1,0 +1,21 @@
+def new_func(quest, eror = "Неверный код. Введите 'да' или 'нет", count = 4):
+    while True:
+        answer = input(quest).lower()
+        if answer == "да":
+            return 1
+        if answer == 'нет':
+            return 1
+        count -= 1
+        if count == 0:
+          print("Количество попыток истекло.")
+          break
+          
+        print(eror)
+        print("Осталось попыток:", count)
+        
+        
+        
+        
+new_func("Вы действительно хотите выйти?:")
+new_func("Вы действительно хотите удалить файл?", eror = "Так удалить или нет?(да - нет)")
+new_func("Вы действительно хотите записать файл?", eror="Так записать или нет?(да-нет)", count=2)

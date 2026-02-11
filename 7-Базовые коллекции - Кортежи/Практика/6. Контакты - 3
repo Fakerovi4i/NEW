@@ -1,0 +1,55 @@
+def add_contact():
+  print("\nДля добавления нового контакта")
+  name_surname = input("Введите ИФ через пробел: ").split()
+  name_surname = tuple(name_surname)
+  if name_surname in contakt_book:
+    print("Контакт с такими ИО существует")
+    print("Текущий список контактов:\n", contakt_book)
+    add_contact()
+  else:
+    phone_number = input("Введите номер телефона: ")
+    contakt_book[name_surname] = phone_number
+  main()
+  
+  
+def find_people():
+  if contakt_book:
+    surname = input("Введите фамилию для поиска: ")
+    for key, value in contakt_book.items():
+      if surname in key:
+        print(key[0], key[1], value)
+  input("Нажмите любую клавишу чтоб продолжить")
+  main()
+    
+    
+def menu():
+  print("\nМеню:\n"
+  "1. Добаивть контакт\n"
+  "2. Найти человека\n"
+  "3. Завершить")
+  choice = input("Введите номер действия: ")
+  return choice
+  
+  
+contakt_book = dict()  
+
+
+def main():
+  if contakt_book:
+    print("\nТекущий список контактов:\n", contakt_book)
+  else:
+    print("Текущий список контактов пуст.")
+  choice = menu()
+  if choice == "1":
+    add_contact()
+  elif choice == "2":
+    find_people()
+  elif choice == "3":
+    print("Завершение программы.")
+    print("Текущий список контактов:\n",
+    contakt_book)
+  else:
+    print("Введена неверная команда, повторите ввод.")
+    main()
+    
+main()

@@ -1,0 +1,16 @@
+[2026-02-08 19:34:18] test: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2026-02-08 19:34:18] test_2: ZeroDivisionError: division by zero
+
+[2026-02-08 19:36:27] test: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2026-02-08 19:36:27] test_2: ZeroDivisionError: division by zero
+
+[2026-02-08 19:36:39] test: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2026-02-08 19:36:39] test_2: ZeroDivisionError: division by zero
+
+[2026-02-08 19:39:22] test: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2026-02-08 19:39:22] test_2: ZeroDivisionError: division by zero
+

@@ -1,0 +1,12 @@
+your_input = {"a": 10, "b": 20}
+
+print("Введите данные:", your_input)
+
+print("Тип данных:", type(your_input))
+
+if isinstance(your_input, (list, dict, set)):
+    print("Mutable")
+else:
+    print("Immutable")
+
+print("Id объекта:", id(your_input))
